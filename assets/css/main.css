@@ -1,0 +1,472 @@
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*=col-] {
+  float: left;
+}
+
+[class*=col-]::after {
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .col-s-1 {
+    width: 8.3333333333%;
+  }
+  .col-s-2 {
+    width: 16.6666666667%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.3333333333%;
+  }
+  .col-s-5 {
+    width: 41.6666666667%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.3333333333%;
+  }
+  .col-s-8 {
+    width: 66.6666666667%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.3333333333%;
+  }
+  .col-s-11 {
+    width: 91.6666666667%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 555;
+  padding: 30px 0;
+  width: 100%;
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .row .logo {
+  display: flex;
+  align-items: center;
+}
+header .row .logo img {
+  width: 35px;
+  height: 35px;
+}
+header .row .logo h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+header .row .nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .row .nav li {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+header .row .nav .buy-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+}
+
+.nav-color {
+  background-color: rgb(81, 63, 138);
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: absolute;
+  }
+  header .row {
+    justify-content: center;
+  }
+  header .row .logo {
+    align-items: center;
+  }
+  header .row .nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header {
+    position: absolute;
+  }
+  header .row {
+    justify-content: center;
+  }
+  header .row .logo {
+    align-items: center;
+  }
+  header .row .nav {
+    display: none;
+  }
+}
+.slider-section {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #2c3e51, rgba(89, 115, 209, 0.8980392157));
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  padding: 50px 0;
+}
+
+.container .article {
+  margin: 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+.container .wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 50px 0;
+}
+.container .wrapper .slide-container {
+  max-width: 100%;
+}
+.container .wrapper .slide-container .Slide {
+  display: none;
+}
+.container .wrapper .slide-container .Slide img {
+  width: 700px;
+  height: 500px;
+}
+.container .wrapper .slide-container .buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrapper .slide-container .buttons .prev,
+.container .wrapper .slide-container .buttons .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -200px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.container .wrapper .slide-container .buttons .prev:hover,
+.container .wrapper .slide-container .buttons .next:hover {
+  background-color: white;
+  color: #2c3e51;
+}
+.container .wrapper .slide-container .buttons .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.container .lst-artcle {
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .wrapper .slide-container .Slide img {
+    width: 700px;
+    height: 500px;
+  }
+  .container .wrapper .slide-container .buttons .prev,
+.container .wrapper .slide-container .buttons .next {
+    margin-top: -200px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container .wrapper .slide-container .Slide img {
+    width: 700px;
+    height: 500px;
+  }
+  .container .wrapper .slide-container .buttons .prev,
+.container .wrapper .slide-container .buttons .next {
+    margin-top: -200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .wrapper .slide-container .Slide img {
+    width: 350px;
+    height: 200px;
+  }
+  .container .wrapper .slide-container .buttons .prev,
+.container .wrapper .slide-container .buttons .next {
+    margin-top: -130px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container .wrapper .slide-container .Slide img {
+    width: 350px;
+    height: 200px;
+  }
+  .container .wrapper .slide-container .buttons .prev,
+.container .wrapper .slide-container .buttons .next {
+    margin-top: -130px;
+  }
+}
+.first-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-section .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(137, 43, 226, 0.57);
+}
+.first-section h1 {
+  font-weight: 900;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  width: 50%;
+  font-size: 50px;
+}/*# sourceMappingURL=main.css.map */

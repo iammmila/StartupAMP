@@ -1,0 +1,46 @@
+.scroll-top {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 50%;
+    z-index: 99;
+    display: block;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    animation: pulse 2s infinite;
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.scroll-top:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 1;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+@keyframes animation {
+    0% {
+        width: 55px;
+        height: 55px;
+    }
+
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+}
